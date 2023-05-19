@@ -1,0 +1,12 @@
+[package]
+name = "mqttrack"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+rumqttc = { version = "0.21", features = ["url"] }
+anyhow = { version = "1", features = [] }
+tokio = { version = "1", features = ["rt-multi-thread"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
